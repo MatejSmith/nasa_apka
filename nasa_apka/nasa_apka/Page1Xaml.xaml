@@ -9,7 +9,17 @@
             <Label
              Grid.Row="1"
             Text="Suhlasíte, že Vás to môže omylom zabiť?"/>
-            <Button x:Name="button" Text="Súhlasím" Clicked="OnNextPageButtonClicked" VerticalOptions="CenterAndExpand" />
+            <Button x:Name="button"
+                    Text="Súhlasím"
+                    TextColor="White"
+                    BackgroundColor="Black"
+                    BorderColor="Blue"
+                    BorderWidth="3"
+                    BorderRadius="6"
+                    Clicked="OnNextPageButtonClicked"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    ImageSource="like.png"/>
             <Button x:Name="exit"
                     Text="Nesúhlasím"
                     TextColor="White"
