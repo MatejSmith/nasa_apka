@@ -86,7 +86,7 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\drawable\" />
+    <AndroidResource Include="Resources\drawable\dislike.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\nasa_apka\nasa_apka.csproj">
