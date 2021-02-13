@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="nasa_apka.Page1Xaml"
+			 Title="Úvod">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label
+             Grid.Row="1"
+            Text="Suhlasíte, že Vás to môže omylom zabiť?"/>
+            <Button x:Name="button" Text="Súhlasím" Clicked="OnNextPageButtonClicked" VerticalOptions="CenterAndExpand" />
+            <Button x:Name="exit" Text="Nesúhlasím" Clicked="ExitApp" VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
