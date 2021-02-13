@@ -3,13 +3,12 @@
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 			 x:Class="nasa_apka.Page1Xaml"
 			 Title="Úvod">
-    <ContentPage.Content>
-        <StackLayout>
 
-            <Label
-             Grid.Row="1"
-            Text="Suhlasíte, že Vás to môže omylom zabiť?"/>
-            <Button x:Name="button"
+    <AbsoluteLayout>
+        <Label
+            Grid.Row="1"
+             Text="Suhlasíte, že Vás to môže omylom zabiť?"/>
+        <Button x:Name="button"
                     Text="Súhlasím"
                     TextColor="White"
                     BackgroundColor="Black"
@@ -17,10 +16,9 @@
                     BorderWidth="3"
                     BorderRadius="6"
                     Clicked="OnNextPageButtonClicked"
-                    VerticalOptions="CenterAndExpand"
-                    HorizontalOptions="Center"
-                    ImageSource="like.png"/>
-            <Button x:Name="exit"
+                    ImageSource="like.png"
+                    AbsoluteLayout.LayoutBounds=".95, .97, .45, .08" AbsoluteLayout.LayoutFlags="All"/>
+        <Button x:Name="exit"
                     Text="Nesúhlasím"
                     TextColor="White"
                     BackgroundColor="Black"
@@ -28,9 +26,7 @@
                     BorderWidth="3"
                     BorderRadius="6"
                     Clicked="ExitApp"
-                    VerticalOptions="CenterAndExpand"
-                    HorizontalOptions="Center"
-                    ImageSource="dislike.png"/>
-        </StackLayout>
-    </ContentPage.Content>
+                    ImageSource="dislike.png"
+                    AbsoluteLayout.LayoutBounds=".05, .97, .45, .08" AbsoluteLayout.LayoutFlags="All"/>
+    </AbsoluteLayout>
 </ContentPage>
